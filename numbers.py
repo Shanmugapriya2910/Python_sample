@@ -1,8 +1,8 @@
 def numbers(start, end):
 
-    even_numbers = []
-    odd_numbers = []
-    prime_numbers = []
+    even= []
+    odd = []
+    prime = []
 
     def is_prime(num):
 
@@ -15,19 +15,19 @@ def numbers(start, end):
 
     for num in range(start, end + 1):
         if num % 2 == 0:
-            even_numbers.append(num)
+            even.append(num)
         else:
-            odd_numbers.append(num)
+            odd.append(num)
 
         if is_prime(num):
-            prime_numbers.append(num)
+            prime.append(num)
 
 
 
     return {
-        "even": even_numbers,
-        "odd": odd_numbers,
-        "prime": prime_numbers
+        "even": even,
+        "odd": odd,
+        "prime": prime
     }
 
 start = int(input("Enter the start of the range: "))
