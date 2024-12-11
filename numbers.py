@@ -42,4 +42,3 @@ with open("numbers.txt", "w") as file:
     file.write("Odd Numbers: " + str(result["odd"]))
     file.write("Prime Numbers: " + str(result["prime"]) )
 
-print("Results have been written to 'numbers.txt'")
